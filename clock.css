@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(170, 230, 230);
+    background-image: linear-gradient(360deg, #9d9d9db3, #0000008a);
+    border-radius: 100%;
+    border: 7px silver solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock_pointer{
+    width: 190px;
+    height: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    /* background-color: white; */
+}
+.clock_pointer_inner{
+    width: 10px;
+    height: 3px;
+    background-color: black;
+    float: left;
+    display: flex;
+    position: relative;
+}
+#point3,#point9{
+background-color: transparent;
+}
+span{
+    display: inline;
+    position: relative;
+    top: -8px;
+    z-index: 1;
+}
+#c2,#c3{
+    background-color: transparent;
+    
+}
+#p12,#p6{
+    display: flex;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+#middle_point{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: relative;
+    top: -3px;
+    z-index: 3;
+   background-color: rgb(252, 160, 23);
+}
+
+.clock_pointer_inner1{
+    width: 10px;
+    height: 3px;
+    background-color: black;
+    float: right;
+}
+#cl1,#cl2,#cl3,#cl4,#cl5,#cl6,#cl7,#cl8{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-content: space-between;
+    transform: rotate(90deg);
+}
+#cl2{
+    transform: rotate(120deg);
+}
+#c4,#c5,#c6,#c7,#c8,#c9,#c10,#c11{
+    width: 4px;
+    border-radius: 100%;
+}
+#cl3{
+transform: rotate(150deg);
+}
+#cl4{
+    transform: rotate(30deg);
+}
+#cl5{
+    transform: rotate(60deg);
+}
+#cl6,#cl7,#cl8{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    transform: rotate(90deg)
+}
+.hrs{
+    width: 50px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: black;
+   
+}
+#hr{
+    background-color: transparent;
+}
+#cl7{
+    transform: rotate(90deg);
+    z-index: 1;
+}
+.mns{
+    width: 65px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgba(239, 5, 5, 0.979)
+}
+#mm{
+    background-color: transparent;
+}
+#cl8{
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.s{
+    width: 88px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgb(247, 251, 251)
+}
+#ss{
+    background-color: transparent;
+}
